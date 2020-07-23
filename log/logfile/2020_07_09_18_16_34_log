@@ -1,0 +1,5 @@
+2020-07-09 18:16:34 login_page.py INFO 登录流程正确，断言成功！
+2020-07-09 18:17:09 login_page.py INFO 登录流程正确，断言失败！
+2020-07-09 18:17:53 search_page.py INFO 搜索流程正确，断言成功！
+2020-07-09 18:19:26 register_page.py INFO 注册流程正确，断言成功！
+2020-07-09 18:20:10 register_page.py INFO 注册流程正确，断言失败！

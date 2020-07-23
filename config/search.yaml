@@ -1,0 +1,7 @@
+#基本流
+-
+  search_content: 手机
+  validata:
+    type: xpath
+    value: /html/body/div[4]/div/ul/li/div/a/p
+    expect: 手机

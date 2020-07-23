@@ -1,0 +1,18 @@
+#基本流
+-
+  username: 666666
+  password: 111111
+  validata:
+    type: xpath
+    value: //a[text()='退出']
+    expect: 退出
+
+#密码错误
+-
+  username: 666666
+  password: 222222
+  validata:
+    type: xpath
+    value: //a[text()='退出']
+    expect: 退出
+

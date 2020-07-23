@@ -1,0 +1,140 @@
+{
+  "uid" : "71dcbd9e7047ce3a",
+  "name" : "test_02_search_00001",
+  "fullName" : "test_case.test_cases.TestCase#test_02_search_00001",
+  "historyId" : "4826ea3287352cfe63fed541decc06f8",
+  "time" : {
+    "start" : 1595526406295,
+    "stop" : 1595526426463,
+    "duration" : 20168
+  },
+  "description" : "test_02_search_00001",
+  "descriptionHtml" : "<p>test_02_search_00001</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1595526406293,
+      "stop" : 1595526406293,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "test_02_search_00001",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ccfd9d715e60e1f4",
+      "name" : "log",
+      "source" : "ccfd9d715e60e1f4.txt",
+      "type" : "text/plain",
+      "size" : 113
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1595526426465,
+      "stop" : 1595526427388,
+      "duration" : 923
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_cases"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-JHEF7VRV"
+  }, {
+    "name" : "thread",
+    "value" : "16460-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_cases"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fa4f94093ed361e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1595526234322,
+        "stop" : 1595526255890,
+        "duration" : 21568
+      }
+    }, {
+      "uid" : "242f3b792c1c77fe",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: False is not true",
+      "time" : {
+        "start" : 1595526127277,
+        "stop" : 1595526146624,
+        "duration" : 19347
+      }
+    }, {
+      "uid" : "ebc75f3cbb7d9f03",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: False is not true",
+      "time" : {
+        "start" : 1595525950368,
+        "stop" : 1595525970117,
+        "duration" : 19749
+      }
+    }, {
+      "uid" : "2a9bcc9ec477f119",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: False is not true",
+      "time" : {
+        "start" : 1595524793197,
+        "stop" : 1595524814033,
+        "duration" : 20836
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "71dcbd9e7047ce3a.json",
+  "parameterValues" : [ ]
+}
