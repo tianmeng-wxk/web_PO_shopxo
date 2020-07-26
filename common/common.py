@@ -1,4 +1,4 @@
-import yaml,xlrd
+import yaml,xlrd,openpyxl
 import smtplib
 from email.mime.text import MIMEText
 #from email.mime.application import MIMEApplication
@@ -49,7 +49,7 @@ class SendEmail:
         except smtplib.SMTPException as e:
             Logger().log().info("发送邮件失败，失败信息：{}".format(e))
 
-#读取excel
+#xlrd读取excel
 class ReadExcel:
     def __init__(self, excel_path, sheet_name):
         self.workbook = xlrd.open_workbook(excel_path)
@@ -74,6 +74,25 @@ class ReadExcel:
                  list.append(s)
                  #j += 1
              return list
+
+#openpyxl读取excel
+def load_data(excel_path,sheet_name):
+    excel = openpyxl.load_workbook(excel_path)
+    sheet = excel[sheet_name]
+    rows = sheet.max_row
+    cols = sheet.max_column
+    list = []
+    for i in range(2,rows+1):
+        dict = {}
+        for j in range(1,cols+1):
+            cell = sheet.cell(i, j)
+            key = sheet.cell(1, j).value
+            dict[key] = cell.value
+        list.append(dict)
+    print(list)
+    return list
+
+#load_data(r'D:\PO_shopxo\config\search.xlsx','Sheet1')
 
 #打开浏览器类型
 def browser_type(type):
