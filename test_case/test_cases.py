@@ -7,6 +7,7 @@ from page_object.add_cart_page import AddCart
 from page_object.register_page import Register
 from common.common import browser_type,SendEmail
 from ddt import ddt, data, file_data, unpack
+from log.log import Logger
 
 
 @ddt
@@ -33,7 +34,7 @@ class TestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         # 发送邮件
-        SendEmail().send_email('../report/2020_07_09_18_55_46_html_report.html')
+        Logger().log().info("--------------测试完成--------------")
 
     #登录
     @file_data("../config/login.yaml")
