@@ -60,7 +60,7 @@ class SendEmail:
         password = "lizceyidpekpdbhd"
         receiver = "tianmeng_wxk@163.com"
         message = MIMEText(content, "HTML", "UTF-8")
-        message["Subject"] = "考研帮APPUI自动化测试"
+        message["Subject"] = "shopxo商城web自动化测试"
         message["From"] = sender
         message["To"] = receiver
         try:

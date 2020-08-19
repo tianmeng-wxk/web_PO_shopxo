@@ -17,7 +17,6 @@ class TestCase(unittest.TestCase):
 
         self.driver = browser_type("chr")
         self.driver.implicitly_wait(10)
-        #self.driver.maximize_window()
         self.lp = LoginPage(self.driver,LoginPage.url)
         self.ip = UserCenterPage(self.driver,UserCenterPage.url)
         self.sp = SearchPage(self.driver,SearchPage.url)
